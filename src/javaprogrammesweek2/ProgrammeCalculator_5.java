@@ -12,27 +12,27 @@ public class ProgrammeCalculator_5 { //class declaration
 
     public static void main(String[] args) { //main method
         //instantiating Scanner class
-        Scanner scanner = new Scanner(System.in); //Instantiate Scanner class object
+        Scanner obj = new Scanner(System.in); //Instantiate Scanner class object
         System.out.println("Enter a number");
-        int num1 = scanner.nextInt(); //read input from console
+        int num1 = obj.nextInt(); //read input from console
         System.out.println("Enter another number");
-        int num2 = scanner.nextInt(); //read input from console
+        int num2 = obj.nextInt(); //read input from console
 
         //calling static methods
         addition(num1, num2);
         multiplication(num1, num2);
 
         //calling instance methods
-        ProgrammeCalculator_5 obj = new ProgrammeCalculator_5();
-        obj.subtraction(num1, num2);
-        obj.division(num1, num2);
+        ProgrammeCalculator_5 cal = new ProgrammeCalculator_5();
+        cal.subtraction(num1, num2);
+        cal.division(num1, num2);
 
         //closing scanner
-        scanner.close();
+        obj.close();
     }
 
     //declaration of user defined method for addition
-    public static void addition(int a, int b) {
+   public static void addition(int a, int b) {
         int result = a + b;
         System.out.println("Sum of two numbers is: " + result);
     }

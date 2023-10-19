@@ -14,6 +14,7 @@ public class Programme_4 { //class declaration
     static int var1 = 10, var2 = 20;
     int var3 = 30, var4 = 40;
 
+
     public static void main(String[] args) { // main method
         Programme_4 obj1 = new Programme_4(); //object instantiation
         obj1.myMethod1();
@@ -27,9 +28,11 @@ public class Programme_4 { //class declaration
     }
 
     public static void myMethod2() { //static method
-        Programme_4 obj2 = new Programme_4();
+        Programme_4 obj2=new Programme_4();
         System.out.println("I am printing from static method:");
         System.out.println("    Static variable are " + var1 + " and " + var2);
         System.out.println("    Instance variable are " + obj2.var3 + " and " + obj2.var4);
     }
+
+
 }
